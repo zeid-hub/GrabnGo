@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Cart from './Cart';
 
 function App() {
   return (
-    <div className="App">
-     
+    <div>
+      <Cart/>
     </div>
-  );
+  )
 }
 
 export default App;
