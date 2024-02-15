@@ -1,10 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
+import Order from "./Order"
 import Home from "./Home";
-import Order from "./Order";
-
-
 
 function App() {
   return (
