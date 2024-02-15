@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  background-color: #ff5f6d; /* Pink color, can be adjusted */
   color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar__left {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar__title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menuItem {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar__menuItem a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar__button {
+  background-color: #ff9966; /* Light orange color, can be adjusted */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__button:hover {
+  background-color: #ff884d; /* Darker shade of orange on hover */
+}
+
+.navbar__cart {
+  position: relative;
+}
+
+.navbar__cartItemCount {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff9966; /* Light orange color */
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
 }
