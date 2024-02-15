@@ -1,9 +1,6 @@
 import React from "react";
 import './Home.css'
 import SearchBar from "./Form";
-import Logo from './Logo.png';
-import Images from './Images/rn_image_picker_lib_temp_f3e124ca-7dd7-4a3e-8d9c-4cd02f3d6fa3.jpg'
-
 
 function Home() {
     return (
@@ -29,13 +26,7 @@ function Home() {
                 <h3>Chipo mwitu</h3>
                 <p>Indulge in our irresistibly crispy and golden Chipo Mwitu</p>
                 
-                </div> 
-                <icons>
-                    <img/>
-                    <img/>
-                    <img/>
-                </icons>
-
+                </div>
                 
             </section>
             
