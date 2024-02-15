@@ -1,13 +1,12 @@
-import React from "react"
-import Order from "./Order"
-import "./App.css"
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  
   return (
-    <Order/>
-  )
+    <div className="App">
+     
+    </div>
+  );
 }
 
-
-  export default App;
+export default App;
