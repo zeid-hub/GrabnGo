@@ -43,7 +43,7 @@
   .inner-header {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: #000;
   }
   
   .price {
@@ -88,34 +88,28 @@
   .span{
     color: midnightblue;
   }
-  .paragraph {
-    max-width: 800px;
-    font-family: 'Open Sans', sans-serif; /* Apply the custom font */
-    font-size: 18px;
-    line-height: 1.5;
-    color: #000;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .Parag {
     text-align: justify;
+    color: #000;
   }
   
   .highlight {
     color: hsl(66, 96%, 49%); /* Apply a different color to the highlighted word */
   }
-.inner-container{
+  .inner-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-color: rgba(248, 248, 248, 0.8); /* Light semi-transparent background color */
-    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-    /* height: 200px; Adjusted height */
-    max-width: 800px; /* Adjusted maximum width */
-    margin: auto; /* Center the container horizontally */
+    background-color: rgba(248, 248, 248, 0.8);
+    max-width: 900px;
+    max-height: 300px; /* Adjusted maximum height */
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+  
   .name{
     color: rgba(21, 255, 0, 0.938);
   }
