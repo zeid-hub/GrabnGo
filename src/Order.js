@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
-import { CartContext } from "./CartContext";
+ import { CartContext } from "./CartContext";
 import "./Order.css"
 
 function Order() {
   const [orderList, setOrderList] = useState([]);
-  const { cart, addToCart } = useContext(CartContext); // Use useContext here
+  const { addToCart } = useContext(CartContext); // Use useContext here
 
   // 1. Fetch the order list data from an "API"
   useEffect(() => {

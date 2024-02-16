@@ -10,13 +10,7 @@ import AboutUs from './AboutUs';
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Routes>
-       <Route path="/aboutus" element={<AboutUs/>}/>
-      <Route path="/cart" element={<Cart/>}/>
-        <Route path="/order" element={<Order/>}/>
-        <Route exact path="/" element={<Home/>}/>
-      </Routes>
+      <Order/>
     </div>
   );
 }
