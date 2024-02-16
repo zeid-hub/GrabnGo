@@ -3,7 +3,7 @@ import "./Cart.css";
 import { CartContext } from "./CartContext";
 
 function Cart() {
-  const { cart, addToCart, removeFromCart, clearCart } = useContext(CartContext);
+  const { cart, removeFromCart, clearCart } = useContext(CartContext);
 
   // Function to handle the buy process
   const handleBuy = () => {

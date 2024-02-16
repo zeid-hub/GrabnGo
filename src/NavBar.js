@@ -1,25 +1,23 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./NavBar";
+import Order from "./Order";
+import Home from "./Home";
+import Cart from "./Cart";
+import AboutUs from "./AboutUs";
 
-
-function NavBar() {
+function App() {
   return (
-    <div className="navbar">
-      <NavLink to="/" className="home">
-        <span className="text">Home</span>
-      </NavLink>
-      <NavLink to="/orders" className="orders">
-        <span className="text">Order</span>
-      </NavLink>
-      <NavLink to="/aboutus" className="about-us">
-        <span className="text">About Us</span>
-      </NavLink>
-      <NavLink to="/cart" className="cart">
-        <span className="text">Cart</span>
-      </NavLink>
+    <div className="App">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
     </div>
   );
 }
 
-export default NavBar;
+export default App;
